@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+li,
+button,
+p,
+label,
+input {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("/images/pexels-rudolf-kirchner-831062.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+button {
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: rgb(90, 79, 238);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+button:hover {
+  background-color: rgb(16, 5, 165);
+}
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url(/images/imageonline-co-blackandwhiteimage.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  font-weight: 500;
+}
+.locations-head h3 {
+  padding: 1rem 0rem;
+}
+
+.benefits-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.benefits-head h3 {
+  padding: 1rem 0rem;
+}
+.cards {
+  min-height: 70vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  text-align: center;
+}
+.card-icon {
+  background-color: rgba(52, 60, 68, 0.8);
+}
+.cards img {
+  max-width: 20%;
+  margin: 2rem;
+}
+.card h4,
+.card p {
+  padding: 1rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url(/images/pexels-eberhard-grossgasteiger-572897.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.5);
+  width: 60%;
+  border-radius: 2rem;
+}
+.form-head {
+  text-align: center;
+  padding: 2rem;
+}
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+.form-wrapper input {
+  margin: 0rem 2rem;
+  padding: 1rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  background-color: rgb(6, 0, 97);
+  border-bottom-left-radius: 2rem;
+
+  border-bottom-right-radius: 2rem;
+}
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 0.8);
+}
+.footer-wrapper img {
+  height: 30px;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  width: 90%;
+  min-height: 20vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 30rem;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1054px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .locations-head h3 {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-wrapper h5 {
+    padding-bottom: 5rem;
+  }
+}
